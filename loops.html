@@ -7,18 +7,19 @@
 </head>
 <body>
     <h1>Printing Random Numbers</h1>
-    <p id="result"></p>
+    <button onclick="generateRandomNumbers(20)">Click Me!</button>
     <script>
-        var i;
         let i = 0;
-        generateRandomNumbers(count) {
+        function generateRandomNumbers(count) {
         while (i < count) {
-            const randomNumber = Math.floor(Math.random());
+            const randomNumber = Math.floor(Math.random()*100);
             i++;
+            document.write("The value of i inside the block is " + i + "<br>" + "<br>")
+            document.write("Random number is " + randomNumber)
         }
         return randomNumber;
         }
-        document.write("The value of i inside the block is " + i)
+        
     </script>
 </body>
 </html>
